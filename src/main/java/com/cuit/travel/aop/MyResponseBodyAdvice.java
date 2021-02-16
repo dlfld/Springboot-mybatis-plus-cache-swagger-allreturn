@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 拦截Controller方法默认返回参数，统一处理返回值/响应体
  */
-@ControllerAdvice
+@ControllerAdvice(basePackages = "com.cuit.travel.controller")
 public class MyResponseBodyAdvice implements ResponseBodyAdvice {
 
     @Override
