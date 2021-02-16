@@ -1,0 +1,24 @@
+spring:
+  #mybatis-plus的配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hotel?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123123
+  #设置cache存到redis里面
+  cache:
+    type: redis
+  #redis的配置
+  redis:
+    database: 1
+    host: 150.158.174.169
+    port: 6379
+    password: 123456
+
+mybatis-plus:
+  configuration:
+    #    驼峰命名打开
+    map-underscore-to-camel-case: true
+server:
+  port: 9999
